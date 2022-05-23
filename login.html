@@ -38,7 +38,7 @@
                 <div class="layui-form-item">
                     <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>登录</button>
                 </div>
-                
+
                 <div class="layui-form-item links">
                     <a href="javascript:;" id="link_reg">去注册账号</a>
                 </div>
@@ -63,24 +63,26 @@
                 <!-- 再次确认密码 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="repassword" required lay-verify="required|pwd|repwd" placeholder="再次确认密码"
-                        autocomplete="off" class="layui-input">
-                </div>                
+                    <input type="password" name="repassword" required lay-verify="required|pwd|repwd"
+                        placeholder="再次确认密码" autocomplete="off" class="layui-input">
+                </div>
                 <!-- 注册按钮 -->
                 <div class="layui-form-item">
                     <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>注册</button>
                 </div>
-                
+
                 <div class="layui-form-item links">
                     <a href="javascript:;" id="link_login">去登录账号</a>
                 </div>
-            </form>            
+            </form>
 
         </div>
     </div>
 
     <script src="/assets/lib/layui/layui.all.js"></script>
     <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入自己封装的 baseAPI.js -->
+    <script src="/assets/js/baseAPI.js"></script>
     <script src="/assets/js/login.js"></script>
 </body>
 

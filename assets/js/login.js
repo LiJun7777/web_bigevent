@@ -28,7 +28,7 @@ $(function() {
     // 注册信息
     $('#form_reg').on('submit', function(e) {
         e.preventDefault()
-        $.post('http://www.liulongbin.top:3007/api/reguser', { username: $('#form_reg [name=username]').val(), password: $('#form_reg [name=password]').val() }, function(res) {
+        $.post('/api/reguser', { username: $('#form_reg [name=username]').val(), password: $('#form_reg [name=password]').val() }, function(res) {
             
             // console.log(res.message);
             layer.msg(res.message);
@@ -42,7 +42,7 @@ $(function() {
     //登录
     $('#form_login').on('submit', function(e) {
         e.preventDefault()
-        $.post('http://www.liulongbin.top:3007/api/login', $(this).serialize(), function(res) {
+        $.post('/api/login', $(this).serialize(), function(res) {
 
             if (res.status !== 0) {
                 return layer.msg('登录失败！')
@@ -53,6 +53,7 @@ $(function() {
             location.href = '/index.html'
         })
     })
+    
     
 
 });
